@@ -16,8 +16,8 @@
   <h1>英会話帳 PWA 技術検証版</h1>
   <section><h2>PWA / Offline</h2><p>接続: <output id="network">確認中</output>　Service Worker: <output id="sw">確認中</output></p></section>
   <section><h2>TTS</h2><p>日本語: こんにちは。これは日本語音声のテストです。</p><p>English: Hello. This is an English speech test.</p><label>速度 <select id="rate"><option>0.75</option><option selected>1.0</option><option>1.25</option><option>1.5</option></select></label> <button id="ja">日本語再生</button> <button id="en">英語再生</button> <button id="stop">停止</button><output id="ttsStatus"></output></section>
-  <section><h2>IndexedDB</h2><input id="dbValue" value="IndexedDB test"><button id="save">保存</button><button id="load">読み込み</button><button id="remove">削除</button><output id="dbStatus"></output></section>
-  <section><h2>Excel (.xlsx)</h2><input id="file" type="file" accept=".xlsx"><button id="export">Export</button><output id="xlsxStatus"></output><div id="rows"></div></section>
+  <section><h2>IndexedDB</h2><input id="dbValue" value="IndexedDB test"><button id="save">保存</button><button id="load">読み込み</button><button id="remove">削除</button><output id="dbStatus">未操作</output></section>
+  <section><h2>Excel (.xlsx)</h2><label class="button" for="file">.xlsx Import</label><input id="file" type="file" accept=".xlsx" hidden><button id="export">.xlsx Export</button><output id="xlsxStatus">未操作</output><div id="rows"></div></section>
   <section><h2>Screen Wake Lock</h2><button id="wake">Wake Lock開始</button><button id="unwake">Wake Lock解除</button><output id="wakeStatus">未取得</output></section>
   <section><h2>操作検証</h2><div id="gesture">ここで左右スワイプ／長押しを試してください</div><output id="gestureStatus">未検知</output></section>
 </main><script src="xlsx-lite.js"></script><script src="app.js"></script>
